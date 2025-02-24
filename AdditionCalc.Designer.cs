@@ -70,12 +70,13 @@
             // 
             // bttnCalculate
             // 
+            bttnCalculate.BackColor = Color.Plum;
             bttnCalculate.Location = new Point(68, 140);
             bttnCalculate.Name = "bttnCalculate";
             bttnCalculate.Size = new Size(75, 23);
             bttnCalculate.TabIndex = 4;
             bttnCalculate.Text = "Calculate";
-            bttnCalculate.UseVisualStyleBackColor = true;
+            bttnCalculate.UseVisualStyleBackColor = false;
             bttnCalculate.Click += bttnCalculate_Click;
             // 
             // lblOutput
@@ -91,6 +92,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Pink;
             ClientSize = new Size(800, 450);
             Controls.Add(lblOutput);
             Controls.Add(bttnCalculate);

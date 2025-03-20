@@ -34,6 +34,8 @@
             txtInput2 = new TextBox();
             bttnCalculate = new Button();
             lblOutput = new Label();
+            lstCalculations = new ListBox();
+            lblDirections = new Label();
             SuspendLayout();
             // 
             // lblInput1
@@ -71,6 +73,7 @@
             // bttnCalculate
             // 
             bttnCalculate.BackColor = Color.Plum;
+            bttnCalculate.FlatStyle = FlatStyle.Flat;
             bttnCalculate.Location = new Point(68, 140);
             bttnCalculate.Name = "bttnCalculate";
             bttnCalculate.Size = new Size(75, 23);
@@ -82,11 +85,29 @@
             // lblOutput
             // 
             lblOutput.AutoSize = true;
-            lblOutput.Location = new Point(77, 213);
+            lblOutput.Location = new Point(86, 208);
             lblOutput.Name = "lblOutput";
             lblOutput.Size = new Size(31, 15);
             lblOutput.TabIndex = 5;
             lblOutput.Text = "Sum";
+            // 
+            // lstCalculations
+            // 
+            lstCalculations.FormattingEnabled = true;
+            lstCalculations.ItemHeight = 15;
+            lstCalculations.Location = new Point(353, 12);
+            lstCalculations.Name = "lstCalculations";
+            lstCalculations.Size = new Size(416, 394);
+            lstCalculations.TabIndex = 6;
+            // 
+            // lblDirections
+            // 
+            lblDirections.AutoSize = true;
+            lblDirections.Location = new Point(12, 9);
+            lblDirections.Name = "lblDirections";
+            lblDirections.Size = new Size(323, 15);
+            lblDirections.TabIndex = 7;
+            lblDirections.Text = "Enter a number in each text box and click \"calculate\" to add.";
             // 
             // frmAddCalc
             // 
@@ -94,6 +115,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Pink;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblDirections);
+            Controls.Add(lstCalculations);
             Controls.Add(lblOutput);
             Controls.Add(bttnCalculate);
             Controls.Add(txtInput2);
@@ -114,5 +137,7 @@
         private TextBox txtInput2;
         private Button bttnCalculate;
         private Label lblOutput;
+        private ListBox lstCalculations;
+        private Label lblDirections;
     }
 }

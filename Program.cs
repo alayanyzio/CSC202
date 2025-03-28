@@ -1,4 +1,4 @@
-namespace ErrorLog
+namespace FinalProjFish
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace ErrorLog
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmErrorLog());
+            Application.Run(new NooksCrannyFish());
         }
     }
 }
